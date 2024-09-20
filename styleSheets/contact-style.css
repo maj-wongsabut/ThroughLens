@@ -1,0 +1,178 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #e7e7e7;
+  --touchOfpink: #f7f3f3;
+  --almostBlack: #252424;
+
+}
+
+body {
+  background-color: var(--white);
+  min-height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
+
+}
+
+nav {
+  background-color: var(--white);
+  box-shadow: 3px 3px 3px var(--grey);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+nav li {
+  height: 4rem;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--black);
+}
+
+nav a:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+nav #logo {
+  margin-right: auto;
+}
+
+.sidebar {
+  background-color: var(--grey);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  width: 250px;
+  z-index: 999;
+  box-shadow: 5px 0 5px var(--grey);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.sidebar li {
+  width: 100%;
+
+}
+
+.sidebar a {
+  width: 100%;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+main {
+  margin-top: 0.1rem;
+}
+
+.contactSection, .helpAndSupport {
+  background-color: var(--touchOfpink);
+}
+
+.contactSection, .helpAndSupport {
+  padding: 20px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  line-height: 1.2rem;
+  padding: 2.5rem;
+}
+
+.contactSection h2, .helpAndSupport h2{
+  font-size: 16px;
+  margin-bottom: 0.6rem;
+}
+
+.contactList {
+  margin-top: 0.4rem;
+}
+
+.contactSection p, .helpAndSupport p, .contactSection li, .helpAndSupport li {
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+
+.helpAndSupport li {
+  margin-top: 0.4rem;
+}
+
+.footerContainer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--white);
+}
+
+#footerLogo {
+  color: var(--white);
+  font-weight: 500;
+  padding-top: 1rem;
+  padding-right: 0rem;
+  padding-bottom: 1rem;
+  padding-left: 0rem;
+  background-color: var(--black);
+  margin-bottom: 1rem;
+}
+
+#thickFont {
+  font-weight: 800;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+
+@media (min-width: 428px) and (max-width: 768px) {
+
+  .contactSection,  .helpAndSupport{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .footerContainer {
+    padding-top: 5rem;
+  }
+}
+
+@media (min-width: 768px){
+
+  .contactSection,  .helpAndSupport{
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+
+  .footerContainer {
+    padding-top: 8rem;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 768px){
+  .noShowMobile{
+      display: none;
+  }
+
+  .sidebar{
+      width: 100%;
+  }
+}

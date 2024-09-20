@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styleSheets/about-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=closedSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul>
+        <li id="logo"><a href="index.html">ThroughLens</a></li>
+        <li class="noShowMobile"><a href="index.html">Home</a></li>
+        <li class="noShowMobile"><a href="contact.html">Contact</a></li>
+        <li class="noShowMobile"><a href="about.html">About</a></li>
+
+        <li onclick=showSidebar()>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="aboutSection">
+      <h2>About Us</h2>
+      <p>Welcome to Through Lens, a community built for photographers, creators, and anyone who loves to capture and share life through the lens of a camera.<br><br> Our mission is simple: to provide a space where everyone, regardless of skill level, can showcase their unique perspective of the world. Photography is more than just images; it's a way of telling stories, expressing creativity, and connecting with others.
+      </p>
+      <br>
+      <h3>On Through Lens, you can:</h3>
+
+      <ul>
+        <li>Upload and share your best shots</li>
+        <li>Explore a gallery of diverse and inspiring images from around the world </li>
+        <li>Engage with fellow photography enthusiasts</li>
+      </ul>
+      <br>
+      <p>Whether you're here to inspire or be inspired, Through Lens is a place where every picture has a voice. We invite you to join our growing community and share your passion with others.</p>
+      <br>
+
+      <p id="words">Capture, Share & Inspire</p>
+
+    </section>
+
+    <section id="crew">
+      <h2>Meet Our Crew</h2>
+      <ul>
+        <li>
+          <img src="/img/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg" alt="Captain Shutterbug" class="crewPhoto">
+          <h3>Captain Shutterbug</h3>
+          <p>CEO & Co-founder</p>
+        </li>
+        <li>
+          <img src="/img/jake-nackos-IF9TK5Uy-KI-unsplash.jpg" alt="Zoom McClickerson" class="crewPhoto">
+          <h3>Zoom McClickerson</h3>
+          <p>Head of development</p>
+        </li>
+        <li>
+          <img src="/img/polina-kuzovkova-nm5Gsk93UJw-unsplash.jpg" alt="Snappy McFlash" class="crewPhoto">
+          <h3>Snappy McFlash</h3>
+          <p>Head of design</p>
+        </li>
+        <li>
+          <img src="/img/ha-nguy-n-OFSQ6bHjFjs-unsplash.jpg" alt="Pixel Pete" class="crewPhoto">
+          <h3>Pixel Pete</h3>
+          <p>VP Product</p>
+        </li>
+        <li>
+          <img src="/img/prince-akachi-4Yv84VgQkRM-unsplash.jpg" alt="Lens Flairington" class="crewPhoto">
+          <h3>Lens Flairington</h3>
+          <p>HR</p>
+        </li>
+
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footerContainer">
+    <p id="footerLogo">Through<u id="thickFont">Lens</u></p>
+    <p>©2024 ThroughLens. All rights reserved.</p>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact & Help</a>
+    </p>
+
+  </footer>
+
+  <script>
+    function showSidebar(){
+      let sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function closedSidebar(){
+      let sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support</title>
+    <link rel="stylesheet" href="/styleSheets/contact-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=closedSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul>
+        <li id="logo"><a href="index.html">ThroughLens</a></li>
+        <li class="noShowMobile"><a href="index.html">Home</a></li>
+        <li class="noShowMobile"><a href="contact.html">Contact</a></li>
+        <li class="noShowMobile"><a href="about.html">About</a></li>
+
+        <li onclick=showSidebar()>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contactSection">
+      <h2>Contact Us</h2>
+      <p>Have questions, feedback, or need assistance? We're here to help! Feel free to reach out to us via email us directly. We aim to respond to all inquiries within 24-48 hours.</p>
+
+      <ul class="contactList">
+        <li>Email:
+          <a href="mailto:support@throughlens.com">support@throughlens.com</a>
+        </li>
+        <li>Tel:
+          <a href="tel:+00467344354968">0046 734 435 4968</a>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="helpAndSupport">
+      <h2>Help and Support</h2>
+      <p>Need help navigating Through Lens? You're in the right place!</p>
+      <br>
+
+      <h2>Frequently Asked Questions:</h2>
+      <ol class="faq">
+        <li>How do I upload photos?<br>
+        Log in to your account and click on the "Upload" button in the top menu. Follow the steps to add your images.</li>
+
+        <li>How do I edit or delete my photos?<br>
+        Visit your profile, select the photo you want to manage, and choose either "Edit" or "Delete" from the options.</li>
+
+        <li>I forgot my password. How can I reset it?<br>
+        Go to the login page and click "Forgot Password." Follow the instructions sent to your email to reset your password.</li>
+      </ol>
+
+      <p>Still need help? If you can't find the answer to your question, contact us at <a href="mailto:support@throughlens.com">support@throughlens.com</a>, and we'll assist you as soon as possible.</p>
+
+    </section>
+  </main>
+  <footer class="footerContainer">
+      <p id="footerLogo">Through<u id="thickFont">Lens</u></p>
+      <p>©2024 ThroughLens. All rights reserved.</p>
+      <p>
+          <a href="index.html">Home</a> |
+          <a href="about.html">About</a> |
+          <a href="contact.html">Contact & Help</a>
+      </p>
+
+    </footer>
+
+
+      <script>
+        function showSidebar(){
+          let sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+
+        function closedSidebar(){
+          let sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+
+
+      </script>
+</body>
+</html>
