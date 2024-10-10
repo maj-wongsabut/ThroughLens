@@ -47,6 +47,7 @@
         <p>Where every photo tells a story.</p>
         <form class="search-bar" action="/search" method="GET">
           <input type="text" name="query" placeholder="Search photos..." required>
+          <button id="btn-hero" type="button">Entre</button>
         </form>
       </article>
     </section>
@@ -80,16 +81,6 @@
 
   </footer>
 
-  <script>
-    function showSidebar(){
-      let sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'flex'
-    }
-
-    function closedSidebar(){
-      let sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none'
-    }
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@
     --grey: #e7e7e7;
     --touchOfpink: #f7f3f3;
     --almostBlack: #252424;
+    --buttonBlack: #161616;
 
 }
 
@@ -113,7 +114,6 @@ form {
     margin-top: 0.8rem;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
-
 }
 
 form input {
@@ -122,6 +122,30 @@ form input {
     border-radius: 5px;
     padding: 0.3rem 1.8rem 0.3rem 1.2rem;
     border: none;
+}
+
+#btn-hero {
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 0.6rem;
+    background-color: var(--buttonBlack);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    font-weight: 600;
+}
+
+#btn-hero:hover {
+    padding: 0.6rem 0.6rem;
+    font-weight: 600;
+    background-color: var(--white);
+    color: var(--almostBlack);
+}
+
+#btn-hero:active {
+    background-color: #67a8ea;
+    color: var(--white);
+
 }
 
 .hide {
@@ -202,6 +226,10 @@ footer p {
         margin-left: 1rem;
         padding: 0.6rem 1.5rem 0.6rem 1.5rem;
     }
+
+    #btn-hero {
+        display: none;
+    }
 }
 
 @media (min-width: 768px){
@@ -232,6 +260,7 @@ footer p {
     .footerContainer {
         padding-top: 8rem;
       }
+
 }
 
 @media(min-width: 320px) and (max-width: 768px){
